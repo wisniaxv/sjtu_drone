@@ -18,7 +18,7 @@ cd ~/ros2_ws/src && ln -s ~/git/sjtu_drone
 cd .. && rosdep install -r -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO && colcon build --packages-select-regex sjtu*
 ```
 
-To use the playground.world file (as depicted below) make sure to install the common gazebo models, for more see the [Readme in sjtu_drone_description](./sjtu_drone_description/README.md).
+Make sure to install the common gazebo models, for more see the [Readme in sjtu_drone_description](./sjtu_drone_description/README.md).
 
 ## Drone Topics
 
@@ -47,14 +47,6 @@ The following ground truth topics are currently published:
 
 
 # Run
-
-## Docker
-
-1. Start the docker container:   
-`bash run_docker.sh`
-2. Connect to docker container to takeoff / land drone:   
-    1. `docker container exec -it sjtu_drone 'ros2 topic pub /drone/takeoff std_msgs/msg/Empty {} --once'`
-    1. `docker container exec -it sjtu_drone 'ros2 topic pub /drone/land std_msgs/msg/Empty {} --once'`
 
 ## ROS 2 Source Installation
 
