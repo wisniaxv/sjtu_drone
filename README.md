@@ -13,7 +13,7 @@ This package is tested with ROS 2 Humble version (Ubuntu 22.04) and Gazebo 11.
 # Downloading and building
 
 ```
-cd ~/<your_workspace/src> && git clone git@github.com:kolaszko/sjtu_drone.git -b ros2
+cd ~/<your_workspace>/src && git clone <your_address_of_sjtu_package> -b ros2
 cd .. && rosdep install -r -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO && colcon build --packages-select-regex sjtu*
 ```
 
