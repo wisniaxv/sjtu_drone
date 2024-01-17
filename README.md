@@ -6,6 +6,14 @@ sjtu_drone is a quadrotor simulation program forked from [tum_simulator](http://
 
 The acronym 'sjtu' stands for Shanghai Jiao Tong University. This package has been used in the past for testing algorithms for the [UAV contest at SJTU](http://mediasoc.sjtu.edu.cn/wordpress)
 
+# Cel projektu
+Uzupełnić kod w pliku drone_controller/drone_controller/drone_project.py do sterowania dronem za pomocą sterowania pozycją.
+## Wersja na 4.0:
+Dron ma autonomicznie poruszać się po scieżce, którą będzie kwadrat, w dwóch wybranych osiach. Minimalny bok kwadratu to 2 m.
+
+## Wersja na 5.0:
+Dron ma autonomicznie poruszać się po ścieżce wytyczonej pomiędzy obręczami obydwu tyczek umieszczonych na mapie.
+
 # Requirements
 
 This package is tested with ROS 2 Humble version (Ubuntu 22.04) and Gazebo 11.
